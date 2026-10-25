@@ -47,6 +47,7 @@ struct Point {
 // the compiler complaining "Point doesn't implement Display". 🗺️
 // `write!(f, "...", args...)` is like println!, but it writes into `f`.
 // Make it produce "(x, y)", e.g. "(1, 2)".
+// 📤 EXPECTED RESULT: `fmt` must write the text "(x, y)" into `f` and return its fmt::Result. Point { x: 1, y: 2 } prints as "(1, 2)".
 impl fmt::Display for Point {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         todo!() // <-- replace this with your code
@@ -62,6 +63,7 @@ fn bracketed(item: &impl fmt::Display) -> String {
 // The pet corner has a Dog AND a Cat in one list (`Box<dyn Animal>` makes that
 // possible!). Collect every animal's `intro()` into a Vec<String>, in order.
 // Hint: `animals.iter().map(|a| a.intro()).collect()`
+// 📤 EXPECTED RESULT: Return a Vec<String> with each animal's intro(), in the same order as the input.
 fn describe_all(animals: &[Box<dyn Animal>]) -> Vec<String> {
     todo!() // <-- replace this with your code
 }

@@ -45,6 +45,7 @@ fn demo() {
 // Ferris's lucky counter lives somewhere else, and we only got a `&mut` to it.
 // Oh no, nobody presses the button! Make the number behind `x` go up by one.
 // Hint: write through the reference with `*x += 1;`
+// 📤 EXPECTED RESULT: Returns nothing. Side effect: the i32 behind `x` becomes one bigger (5 -> 6).
 fn increment(x: &mut i32) {
     todo!() // <-- replace this with your code
 }
@@ -53,6 +54,7 @@ fn increment(x: &mut i32) {
 // A basket of fish prices must be DOUBLED because of inflation. 📈 You get a
 // mutable slice, so change the elements IN PLACE (don't create a new Vec).
 // Hint: `for item in v.iter_mut()` gives you `&mut i32` items. Then `*item *= 2;`
+// 📤 EXPECTED RESULT: Returns nothing. Side effect: every element of `v` is doubled in place ([1, 2, 3] becomes [2, 4, 6]).
 fn double_all(v: &mut [i32]) {
     todo!() // <-- replace this with your code
 }

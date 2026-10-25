@@ -49,6 +49,7 @@ fn main() {
     // Crab `a` adds 5 coins and crab `b` adds 10 coins to the jar.
     // Oh no, they forgot to do it!
     // Use `*a.borrow_mut() += 5;` and the same for `b` with 10.
+    // 📤 EXPECTED RESULT: No new variables or return value. Side effect: the number inside `shared` becomes 15 (0 + 5 via `a`, + 10 via `b`).
     todo!() // <-- replace this with your code
 
     assert_eq!(*shared.borrow(), 15);

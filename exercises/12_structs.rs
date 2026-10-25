@@ -46,6 +46,7 @@ fn demo() {
 // starts out ACTIVE. Oh no, `make_user` is empty!
 // Build and return a User from the `name` and `age` arguments, using field
 // init shorthand (no `name: name`!) and `active: true`.
+// 📤 EXPECTED RESULT: Return a User with the given name and age and `active` set to true.
 fn make_user(name: String, age: u32) -> User {
     todo!() // <-- replace this with your code
 }
@@ -54,6 +55,7 @@ fn make_user(name: String, age: u32) -> User {
 // A member stopped paying dues. Return a copy of `user` that is identical
 // except `active` is false. Use struct update syntax with `..user.clone()`
 // to fill in the remaining fields.
+// 📤 EXPECTED RESULT: Return a NEW User identical to `user` but with `active` set to false.
 fn deactivate(user: &User) -> User {
     todo!() // <-- replace this with your code
 }

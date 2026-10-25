@@ -43,6 +43,7 @@ fn demo() {
 // How many fish in total? Write it RECURSIVELY with `match`:
 //   Cons(v, rest) -> v + sum(rest)
 //   Nil           -> 0
+// 📤 EXPECTED RESULT: Return an i32: the total of all numbers in the list (Nil -> 0).
 fn sum(list: &List) -> i32 {
     todo!() // <-- replace this with your code
 }
@@ -51,6 +52,7 @@ fn sum(list: &List) -> i32 {
 // How many wagons does the train have? Same idea:
 //   Cons(_, rest) -> 1 + length(rest)       (`_` = "I don't care about the number")
 //   Nil           -> 0
+// 📤 EXPECTED RESULT: Return a usize: the number of wagons in the list (Nil -> 0).
 fn length(list: &List) -> usize {
     todo!() // <-- replace this with your code
 }

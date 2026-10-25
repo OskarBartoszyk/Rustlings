@@ -39,6 +39,7 @@ fn demo() {
 // Oh no, someone forgot the magic stickers! Add a derive line right above
 // `struct Point` listing: Debug, Clone, Copy, PartialEq
 //   -> #[derive(Debug, Clone, Copy, PartialEq)]
+// 📤 EXPECTED RESULT: Only the derive line is needed - no variables or return values. The tests then compile and compare/print/copy points.
 // TODO: write your code here
 struct Point {
     x: i32,
@@ -52,6 +53,7 @@ fn main() {
     // Ferris wants to keep a backup of his secret recipe before giving the
     // original away. The line below `moved = original` MOVES the recipe.
     // Create `copy` BEFORE that line, as an independent duplicate of `original`.
+    // 📤 EXPECTED RESULT: Create a new variable `copy` of type String with the same text as `original` ("rust"), declared BEFORE the line `let moved = original;`.
     let original = String::from("rust");
     todo!() // <-- replace this with your code
     let moved = original; // `original` is gone after this line

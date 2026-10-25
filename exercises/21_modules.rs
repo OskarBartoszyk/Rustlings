@@ -36,6 +36,7 @@ mod math {
     //     pub fn cube(x: i32) -> i32 { ... }       (x * x * x)
     //
     // Don't forget `pub`, or `main` will get "function `cube` is private". 🙈
+    // 📤 EXPECTED RESULT: Add a public function `cube(x: i32) -> i32` returning x * x * x. math::cube(3) must return 27.
     // TODO: write your code here
 }
 

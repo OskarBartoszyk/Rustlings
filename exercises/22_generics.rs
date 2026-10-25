@@ -49,12 +49,14 @@ fn demo() {
 // whole other crab. Time to build it as a generic `Wrapper<T>`.
 impl<T> Wrapper<T> {
     // 🎯 MISSION 1: the constructor. Put `value` inside the box.
+    // 📤 EXPECTED RESULT: Return a Wrapper (Self) that stores `value`.
     fn new(value: T) -> Self {
         todo!() // <-- replace this with your code
     }
 
     // 🎯 MISSION 2: peek inside without taking the contents out.
     // Return a reference to the stored value (`&self.value`).
+    // 📤 EXPECTED RESULT: Return a reference &T to the stored value (does not move it out).
     fn get(&self) -> &T {
         todo!() // <-- replace this with your code
     }
@@ -64,6 +66,7 @@ impl<T> Wrapper<T> {
 // A pair of items (any two types, A and B) needs to be flipped around.
 // Oh no, the types can be different! (1, "a") must become ("a", 1).
 // Return a tuple with the two parts in reverse order. Hint: `pair.0` / `pair.1`.
+// 📤 EXPECTED RESULT: Return a tuple (B, A) with the two parts reversed. swap_pair((1, "a")) -> ("a", 1).
 fn swap_pair<A, B>(pair: (A, B)) -> (B, A) {
     todo!() // <-- replace this with your code
 }

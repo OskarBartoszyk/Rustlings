@@ -30,6 +30,7 @@ enum AppError {
 // The `?` operator knows how to turn a ParseIntError into an AppError... only
 // if we TELL it how. Oh no, nobody did! Wrap `e` into the right variant.
 impl From<ParseIntError> for AppError {
+    // 📤 EXPECTED RESULT: Return an AppError (Self) built from `e`, using the matching variant.
     fn from(e: ParseIntError) -> Self {
         todo!() // <-- replace this with your code
     }
@@ -40,6 +41,7 @@ impl From<ParseIntError> for AppError {
 //   1. Parse `s` into an i32 using `?` (the From impl above does the conversion).
 //   2. If the number is negative: `return Err(AppError::Negative(n));`
 //   3. Otherwise return `Ok(n)`.
+// 📤 EXPECTED RESULT: Return Ok(n) for a positive number; Err(AppError::Negative(n)) for a negative one; a parse error becomes an AppError via `?`.
 fn parse_positive(s: &str) -> Result<i32, AppError> {
     todo!() // <-- replace this with your code
 }

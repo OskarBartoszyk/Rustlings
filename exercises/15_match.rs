@@ -42,6 +42,7 @@ fn demo() {
 //   Circle(r)      -> PI * r * r
 //   Rect { w, h }  -> w * h
 //   Point          -> 0.0
+// 📤 EXPECTED RESULT: Return an f64: the area of the shape (Circle: PI*r*r, Rect: w*h, Point: 0.0).
 fn area(shape: &Shape) -> f64 {
     todo!() // <-- replace this with your code
 }
@@ -53,6 +54,7 @@ fn area(shape: &Shape) -> f64 {
 //   1 to 9     -> "small"      (hint: range `1..=9`)
 //   otherwise  -> "big"        (hint: `_`)
 // Order matters: patterns are tried top to bottom.
+// 📤 EXPECTED RESULT: Return a &'static str: "negative", "zero", "small" or "big". describe(-3) -> "negative", describe(5) -> "small".
 fn describe(n: i32) -> &'static str {
     todo!() // <-- replace this with your code
 }

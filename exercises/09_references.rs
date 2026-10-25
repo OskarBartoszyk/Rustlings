@@ -36,6 +36,7 @@ fn demo() {
 // 🎯 MISSION 1
 // Ferris's mailbox: is the borrowed message empty? Return true if so.
 // Hint: Strings have a method `.is_empty()`.
+// 📤 EXPECTED RESULT: Return a bool: true if the string is empty, false otherwise. is_blank(&String::new()) -> true.
 fn is_blank(s: &String) -> bool {
     todo!() // <-- replace this with your code
 }
@@ -48,6 +49,7 @@ fn main() {
     // Oh no, someone passed `s` BY VALUE to calculate_length in an earlier
     // version, and the String vanished (see the assert below: we still need it!).
     // Store the length in `n`, but LEND `s` with `&s` instead of giving it away.
+    // 📤 EXPECTED RESULT: Create a new variable `n` of type usize holding the length of `s` (use `calculate_length(&s)`); `s` must still be usable afterwards.
     todo!() // <-- replace this with your code
     assert_eq!(n, 5);
     assert_eq!(s, "hello"); // still ours, because we only lent it

@@ -45,6 +45,7 @@ fn main() {
     //     handles.push(thread::spawn(move || i * i));
     //
     // After the loop we `join` all of them and add up the answers: 1+4+9+16 = 30.
+    // 📤 EXPECTED RESULT: Create no new variables: inside the loop push one JoinHandle<i32> per number into the existing `handles`. The final sum must be 30.
     let mut handles: Vec<thread::JoinHandle<i32>> = Vec::new();
     for i in 1..=4 {
         todo!() // <-- replace this with your code

@@ -41,6 +41,7 @@ fn demo() {
 // Ferris is looking for the first EVEN-numbered fish tank. 🐠 Return
 // `Some(number)` for the first even number in the slice, or `None` if there
 // isn't one. (Loop over `&x in v`, `return Some(x)` early, `None` at the end.)
+// 📤 EXPECTED RESULT: Return Some(n) with the first even number, or None if there is none. [1, 3, 4, 6] -> Some(4), [1, 3] -> None.
 fn find_first_even(v: &[i32]) -> Option<i32> {
     todo!() // <-- replace this with your code
 }
@@ -49,6 +50,7 @@ fn find_first_even(v: &[i32]) -> Option<i32> {
 // A customer may or may not have ordered. If they did, DOUBLE the order,
 // otherwise stay `None`. Use a `match` with both arms:
 //   Some(v) => ...,   None => ...
+// 📤 EXPECTED RESULT: Return an Option<i32>: Some(x * 2) if x is Some, None if x is None.
 fn double_opt(x: Option<i32>) -> Option<i32> {
     todo!() // <-- replace this with your code
 }
@@ -56,6 +58,7 @@ fn double_opt(x: Option<i32>) -> Option<i32> {
 // 🎯 MISSION 3
 // Give back the number inside, or -1 if there is nothing. This time use
 // `if let Some(v) = x { ... } else { ... }` (no match!).
+// 📤 EXPECTED RESULT: Return an i32: the number inside the Option, or -1 for None.
 fn value_or_minus_one(x: Option<i32>) -> i32 {
     todo!() // <-- replace this with your code
 }

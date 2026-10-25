@@ -39,6 +39,7 @@ fn demo() {
 // Ferris's factory stamps a number on every cookie tin. 🍪 He wants the
 // SQUARES of only the EVEN numbers. Chain it in one line:
 //   v.iter().filter(...).map(...).collect()
+// 📤 EXPECTED RESULT: Return a Vec<i32> with the squares of the even numbers only, in order. [1, 2, 3, 4] -> [4, 16].
 fn squares_of_evens(v: &[i32]) -> Vec<i32> {
     todo!() // <-- replace this with your code
 }
@@ -46,6 +47,7 @@ fn squares_of_evens(v: &[i32]) -> Vec<i32> {
 // 🎯 MISSION 2
 // How many letters are there in ALL the words together?
 // Chain: `.iter()`, `.map(|w| w.len())`, `.sum()`.
+// 📤 EXPECTED RESULT: Return a usize: the sum of the lengths of all words. ["ab", "cde"] -> 5.
 fn total_len(words: &[&str]) -> usize {
     todo!() // <-- replace this with your code
 }
@@ -58,6 +60,7 @@ fn main() {
     // 🎯 MISSION 3
     // Create a closure called `triple` that takes an i32 and multiplies it by 3.
     // Syntax: `let name = |param: type| expression;`
+    // 📤 EXPECTED RESULT: Create a new variable `triple` holding a closure (i32 -> i32) that returns its argument times 3. triple(4) must give 12.
     todo!() // <-- replace this with your code
     assert_eq!(triple(4), 12);
     println!("✅ Exercise 20 passed! Iterators go brrr. 🚀");

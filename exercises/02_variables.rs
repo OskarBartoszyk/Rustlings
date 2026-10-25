@@ -47,6 +47,7 @@ fn main() {
     // score as a plain stone-carved `let`, so it can't go up!
     // Declare `score` so that it STARTS at 10 and then goes up by 5.
     // (Your code goes between the two comment lines. `+=` adds in place.)
+    // 📤 EXPECTED RESULT: `score` must be a mutable i32 variable that holds 10 at the start; after the +5 it equals 15 (the assert checks it).
     todo!() // <-- replace this with your code
     assert_eq!(score, 15);
 
@@ -55,6 +56,7 @@ fn main() {
     // HOW MANY there are, as a number. Don't invent a new name: SHADOW `spaces`
     // so that it becomes the number of characters.
     // Hint: "abc".len() gives 3.
+    // 📤 EXPECTED RESULT: `spaces` must end up as a number of type usize equal to 3 (the same name, shadowed - no new name).
     let spaces = "   ";
     todo!() // <-- replace this with your code
     assert_eq!(spaces, 3);

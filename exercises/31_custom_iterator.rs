@@ -28,6 +28,7 @@ struct Countdown(u32);
 impl Iterator for Countdown {
     type Item = u32;
 
+    // 📤 EXPECTED RESULT: Return Option<u32>: Some(current number) while counting down, None when finished. Countdown(3) yields 3, 2, 1, then None.
     fn next(&mut self) -> Option<u32> {
         todo!() // <-- replace this with your code
     }

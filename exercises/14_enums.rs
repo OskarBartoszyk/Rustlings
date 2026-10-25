@@ -45,6 +45,7 @@ fn demo() {
 // factory functions below are empty. Build the right variant in each:
 
 // A round cookie of the given radius.
+// 📤 EXPECTED RESULT: Return a Shape (the Circle variant) with the given radius. Do the same for the other factory functions below (each returns a Shape).
 fn circle(radius: f64) -> Shape {
     todo!() // <-- replace this with your code
 }

@@ -37,6 +37,7 @@ fn demo() {
 // Ferris receives orders as TEXT ("21") and must double them. 🥐 Sometimes
 // customers type nonsense ("croissant"). Parse `s` into an i32 using `?`
 // (so errors are returned automatically), then return `Ok(n * 2)`.
+// 📤 EXPECTED RESULT: Return Ok(n * 2) when `s` is a number ("21" -> Ok(42)), or the parse Err ("croissant" -> Err(..)) otherwise.
 fn parse_and_double(s: &str) -> Result<i32, ParseIntError> {
     todo!() // <-- replace this with your code
 }
@@ -45,6 +46,7 @@ fn parse_and_double(s: &str) -> Result<i32, ParseIntError> {
 // Oh no, the cafe's calculator exploded when someone divided by zero! 💥
 // Make `safe_div` return Err(String::from("division by zero")) when b == 0,
 // and Ok(a / b) otherwise.
+// 📤 EXPECTED RESULT: Return Ok(a / b), or Err(String::from("division by zero")) when b == 0. safe_div(10, 2) -> Ok(5).
 fn safe_div(a: i32, b: i32) -> Result<i32, String> {
     todo!() // <-- replace this with your code
 }

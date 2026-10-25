@@ -47,6 +47,7 @@ impl Animal for Dog {
 // 🎯 MISSION
 // Ferris opened a pet corner in the cafe. 🐾 The dog is already working, but
 // the CAT refuses to talk because nobody told the compiler she's an Animal!
+// 📤 EXPECTED RESULT: Inside the block write two methods: name() returns "Cat" and speak() returns "Meow" (both as &str, matching the trait's signatures).
 // Fill in the `impl Animal for Cat` block:
 //   name()  -> "Cat"
 //   speak() -> "Meow"

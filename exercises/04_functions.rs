@@ -43,6 +43,7 @@ fn demo() {
 // Ferris is tiling the cafe floor. He needs the area of a square tile,
 // given its side `x`. Return x * x.
 // (Remember: NO semicolon on the last line!)
+// 📤 EXPECTED RESULT: Return an i32: x multiplied by itself. square(4) must return 16.
 fn square(x: i32) -> i32 {
     todo!() // <-- replace this with your code
 }
@@ -52,6 +53,7 @@ fn square(x: i32) -> i32 {
 // Return `true` if `n` is even, `false` otherwise.
 // Hint: `%` is the remainder operator, and `==` compares. A comparison is
 // already a bool, so you don't need an `if` at all.
+// 📤 EXPECTED RESULT: Return a bool: true for even n, false for odd n. is_even(4) -> true, is_even(7) -> false.
 fn is_even(n: i32) -> bool {
     todo!() // <-- replace this with your code
 }

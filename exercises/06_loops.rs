@@ -46,6 +46,7 @@ fn demo() {
 // ... the n-th row has n. How many crates in total?
 // Oh no, the `for` loop is missing! Write one that walks over 1..=n
 // (inclusive!) and adds each number to `total`.
+// 📤 EXPECTED RESULT: Return a u32: the sum 1 + 2 + ... + n (use the existing `total`). sum_to(4) must return 10.
 fn sum_to(n: u32) -> u32 {
     let mut total = 0;
     todo!() // <-- replace this with your code
@@ -58,6 +59,7 @@ fn sum_to(n: u32) -> u32 {
 // The `loop` below never ends on its own. Inside it:
 //   - if `p` is bigger than `n`, leave with `break p;` (the loop returns p)
 //   - otherwise double `p`.
+// 📤 EXPECTED RESULT: Return a u32: the first power of two (1, 2, 4, 8...) strictly greater than n. first_power_of_two_above(5) -> 8, (8) -> 16.
 fn first_power_of_two_above(n: u32) -> u32 {
     let mut p = 1;
     loop {

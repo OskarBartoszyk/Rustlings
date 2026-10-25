@@ -44,6 +44,7 @@ fn main() {
         //     thread::spawn(move || { *c.lock().unwrap() += 1; })
         //
         // and push the JoinHandle into `handles`.
+        // 📤 EXPECTED RESULT: Create no new variables: spawn one thread per loop pass and push its JoinHandle into `handles`. The counter must end at 10.
         todo!() // <-- replace this with your code
     }
     for h in handles {

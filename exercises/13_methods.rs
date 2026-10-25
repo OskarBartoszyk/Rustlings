@@ -40,23 +40,27 @@ impl Rectangle {
     // 🎯 MISSION 1: Ferris is designing fish ponds. 🐟
     // A square pond is a rectangle whose sides are equal. Write the
     // constructor: both width and height are `size`.
+    // 📤 EXPECTED RESULT: Return a Rectangle with width == height == size. Rectangle::square(3) -> 3x3.
     fn square(size: u32) -> Self {
         todo!() // <-- replace this with your code
     }
 
     // 🎯 MISSION 2: how much water fits? Return width * height.
+    // 📤 EXPECTED RESULT: Return a u32: width * height. A 3x4 pond has area 12.
     fn area(&self) -> u32 {
         todo!() // <-- replace this with your code
     }
 
     // 🎯 MISSION 3: can this pond hold the OTHER pond inside it?
     // Only if self is strictly bigger than `other` in BOTH width and height.
+    // 📤 EXPECTED RESULT: Return a bool: true only if self is bigger than other in BOTH width and height.
     fn can_hold(&self, other: &Rectangle) -> bool {
         todo!() // <-- replace this with your code
     }
 
     // 🎯 MISSION 4: expansion time! Multiply both dimensions by `factor`
     // IN PLACE. (Look at the signature: `&mut self` means you may change fields.)
+    // 📤 EXPECTED RESULT: Returns nothing. Side effect: width and height of self are both multiplied by `factor` (2x3 scaled by 2 becomes 4x6).
     fn scale(&mut self, factor: u32) {
         todo!() // <-- replace this with your code
     }

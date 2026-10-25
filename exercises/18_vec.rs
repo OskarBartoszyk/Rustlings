@@ -37,6 +37,7 @@ fn demo() {
 // Ferris sorts the lottery tickets and keeps only the EVEN ones. 🎟️
 // `out` is an empty Vec waiting for you. Loop over `v`, and `push` every
 // even number into `out`.
+// 📤 EXPECTED RESULT: Return the existing Vec `out` filled with the even numbers of `v`, in order. [1, 2, 3, 4] -> [2, 4].
 fn evens(v: &[i32]) -> Vec<i32> {
     let mut out = Vec::new();
     todo!() // <-- replace this with your code
@@ -47,6 +48,7 @@ fn evens(v: &[i32]) -> Vec<i32> {
 // What was the LAST ticket in the pile? If the pile is empty, answer 0.
 // `v.last()` returns an Option<&i32>. Handle both cases with `match`.
 // (Hint: the pattern `Some(&x)` unpacks the reference for you.)
+// 📤 EXPECTED RESULT: Return an i32: the last element of `v`, or 0 if `v` is empty. [1, 2, 3] -> 3, [] -> 0.
 fn last_or_zero(v: &[i32]) -> i32 {
     todo!() // <-- replace this with your code
 }

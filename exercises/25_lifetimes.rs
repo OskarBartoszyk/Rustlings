@@ -40,6 +40,7 @@ fn demo() {
 // Two crabs argue about who has the LONGER name. 🦀⚔️🦀 Return the longer
 // string (if equal, return `a`). The signature with `'a` is already written;
 // you just compare `.len()`s and return one of the two references.
+// 📤 EXPECTED RESULT: Return a &str: the longer of a and b (a if they have equal length). longest("ab", "abc") -> "abc".
 fn longest<'a>(a: &'a str, b: &'a str) -> &'a str {
     todo!() // <-- replace this with your code
 }
@@ -48,6 +49,7 @@ fn longest<'a>(a: &'a str, b: &'a str) -> &'a str {
 // Ferris collects book quotes. 📖 Return an `Excerpt` whose `part` is the text
 // up to the FIRST '.' (or the whole text if there's no dot).
 // Hint: `text.split('.').next().unwrap_or(text)` gives that piece.
+// 📤 EXPECTED RESULT: Return an Excerpt whose `part` is the text before the first '.' (or all of it). "Hi. Bye." -> part is "Hi".
 fn first_sentence<'a>(text: &'a str) -> Excerpt<'a> {
     todo!() // <-- replace this with your code
 }

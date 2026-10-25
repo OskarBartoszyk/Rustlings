@@ -37,6 +37,7 @@ fn demo() {
 // The cafe's gossip column! 🗞️ Count how many times each word appears in `text`.
 // `counts` is ready. Loop over `text.split_whitespace()` and for every word
 // do the entry trick: `*counts.entry(w.to_string()).or_insert(0) += 1;`
+// 📤 EXPECTED RESULT: Return the existing HashMap `counts` mapping each word to how many times it appears. "a b a" -> {"a": 2, "b": 1}.
 fn count_words(text: &str) -> HashMap<String, u32> {
     let mut counts = HashMap::new();
     todo!() // <-- replace this with your code
@@ -47,6 +48,7 @@ fn count_words(text: &str) -> HashMap<String, u32> {
 // How popular is `key`? Return its count, or 0 if the word never showed up.
 // `m.get(key)` gives an Option<&u32>. Use `.unwrap_or(&0)` for the fallback
 // and a `*` in front to turn the reference into a plain number.
+// 📤 EXPECTED RESULT: Return a u32: the count stored under `key`, or 0 if the key is missing.
 fn lookup_or_zero(m: &HashMap<String, u32>, key: &str) -> u32 {
     todo!() // <-- replace this with your code
 }

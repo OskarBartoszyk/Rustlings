@@ -36,6 +36,7 @@ fn demo() {
 // Hint: `n.to_string()` turns a number into a String.
 // Since `if` is an expression, you can just make the whole chain the
 // function's last line.
+// 📤 EXPECTED RESULT: Return a String: "FizzBuzz", "Fizz", "Buzz", or the number as text. fizzbuzz(15) -> "FizzBuzz", fizzbuzz(7) -> "7".
 fn fizzbuzz(n: u32) -> String {
     todo!() // <-- replace this with your code
 }

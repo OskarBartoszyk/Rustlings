@@ -34,6 +34,7 @@ fn demo() {
 // named "Ada" (and "Hello, Bob!" for Bob, and so on).
 //
 // Don't print it - RETURN it. Use `format!` with a {} slot for the name.
+// 📤 EXPECTED RESULT: Return a String (not print it): "Hello, Ada!" for the name "Ada".
 fn greeting(name: &str) -> String {
     todo!() // <-- replace this with your code
 }

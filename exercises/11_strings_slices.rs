@@ -41,6 +41,7 @@ fn demo() {
 // ("hello world" -> "hello"). For an empty note ("   ") return "".
 // Hint: `s.split_whitespace().next()` gives an Option (the word, or nothing).
 // Add `.unwrap_or("")` to say "or just use an empty string".
+// 📤 EXPECTED RESULT: Return a &str: the first word of `s`, or "" if there is none. first_word("hello world") -> "hello".
 fn first_word(s: &str) -> &str {
     todo!() // <-- replace this with your code
 }
@@ -50,6 +51,7 @@ fn first_word(s: &str) -> &str {
 // Return true if `s` is one.
 // Hint: `s.chars()` is an iterator over letters, `.rev()` flips it, and
 // iterators have an `.eq(other)` method to compare element by element.
+// 📤 EXPECTED RESULT: Return a bool: true if `s` reads the same backwards. is_palindrome("racecar") -> true, is_palindrome("crab") -> false.
 fn is_palindrome(s: &str) -> bool {
     todo!() // <-- replace this with your code
 }

@@ -48,6 +48,7 @@ fn demo() {
 // The owner wants the AVERAGE price, with decimals (3 and 4 -> 3.5).
 // Oh no! `a / b` on integers would chop off the decimals!
 // Convert both to f64 with `as f64` BEFORE dividing.
+// 📤 EXPECTED RESULT: Create a new variable `result` of type f64 holding the average of a and b, and RETURN it (no println!). average(3, 4) must return 3.5.
 fn average(a: i32, b: i32) -> f64 {
     todo!() // <-- replace this with your code
 }
@@ -55,6 +56,7 @@ fn average(a: i32, b: i32) -> f64 {
 // 🎯 MISSION 2
 // A pair of crabs (a, b) stands in the wrong order. Return a tuple with them swapped.
 // Hint: destructure it first with `let (a, b) = pair;`
+// 📤 EXPECTED RESULT: Return a tuple (i32, i32) with the two values in reverse order. swap((1, 2)) must return (2, 1).
 fn swap(pair: (i32, i32)) -> (i32, i32) {
     todo!() // <-- replace this with your code
 }
@@ -62,6 +64,7 @@ fn swap(pair: (i32, i32)) -> (i32, i32) {
 // 🎯 MISSION 3
 // Five buckets of fish in a row. Ferris only wants the FIRST bucket plus the LAST one.
 // Arrays are indexed from 0 (just like Python). The last index of 5 items is 4.
+// 📤 EXPECTED RESULT: Return ONE i32: the first element plus the last element. first_plus_last([1, 2, 3, 4, 10]) must return 11.
 fn first_plus_last(arr: [i32; 5]) -> i32 {
     todo!() // <-- replace this with your code
 }

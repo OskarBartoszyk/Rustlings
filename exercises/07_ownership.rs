@@ -53,6 +53,7 @@ fn demo() {
 //   1. Add " world" to the end with `s.push_str(" world");`
 //   2. Hand the String back by making `s` the last line (no semicolon!).
 // Otherwise the string would be dropped at the end of the function. 💀
+// 📤 EXPECTED RESULT: Return a String: the original text with " world" added at the end. append_world(String::from("hello")) must return "hello world".
 fn append_world(mut s: String) -> String {
     todo!() // <-- replace this with your code
 }
